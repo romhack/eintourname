@@ -151,20 +151,3 @@ main = do
       let inputU8 = Bs.unpack input
           encoded = writeRleCode . encode $ inputU8
       Bs.writeFile "encoded.bin" (Bs.pack encoded)
-
-
-{--
-
-
-  
-      input <- Bs.readFile "Teenage Mutant Ninja Turtles - Tournament Fighters (U).nes"
-      let inputU8 =  drop 0xD058 $ Bs.unpack input
-      let out = concatMap decode $ readRleCode inputU8
-      Bs.writeFile "out.bin" $ Bs.pack out
-     --print $ readRleCode inputU8
-   
-     input <- Bs.readFile "unpackedMaster.bin"
-     let inputU8 = Bs.unpack input
-     let out = writeRleCode $ encode inputU8
-     Bs.writeFile "packedOut.bin" $ Bs.pack out
---}
