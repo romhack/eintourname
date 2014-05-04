@@ -1,4 +1,4 @@
-deforleard
+Eintourname
 =========
 NES "Teenage Mutant Ninja Turtles - Tournament Fighters" RLE tool. Game uses RLE encoded tile maps. This tool can decode/encode them.
 
